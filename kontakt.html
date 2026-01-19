@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Sonne + Wärme Rhein‑Neckar</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo_favicon_16.png">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.5; }
+        header { background: #f6f6f6; padding: 20px; }
+        header img { height: 60px; vertical-align: middle; }
+        nav a { margin-right: 15px; color: #333; text-decoration: none; font-weight: bold; }
+        .content { padding: 40px 20px; }
+        .contact-info { margin-bottom: 30px; }
+        form label { display: block; margin: 10px 0 5px; }
+        form input, form textarea { width: 100%; padding: 10px; margin-bottom: 15px; }
+        form button { background: #0066cc; color: #fff; border: none; padding: 10px 20px; cursor: pointer; }
+        footer { background: #f6f6f6; padding: 20px; text-align: center; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo_header_transparent.png" alt="Logo">
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="photovoltaik-mannheim.html">Photovoltaik</a>
+            <a href="waermepumpe-mannheim.html">Wärmepumpe</a>
+            <a href="kombiloesung.html">Kombi‑Lösung</a>
+            <a href="foerderung.html">Förderung</a>
+            <a href="partner.html">Partner</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>Kontakt</h1>
+        <div class="contact-info">
+            <p><strong>Adresse:</strong><br>Timo Schreck<br>Villinger Straße 20<br>68239 Mannheim</p>
+            <p><strong>E-Mail:</strong> <a href="mailto:info@sw-rn.de">info@sw-rn.de</a></p>
+            <p><strong>Telefon:</strong> <a href="tel:+4915565415254">+49 15565 415254</a></p>
+        </div>
+        <h2>Schreiben Sie uns</h2>
+        <form action="https://formsubmit.co/info@sw-rn.de" method="POST">
+            <input type="hidden" name="_next" value="https://www.sw-rn.de/danke.html">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" required>
+            <label for="email">E‑Mail</label>
+            <input type="email" id="email" name="Email" required>
+            <label for="nachricht">Nachricht</label>
+            <textarea id="nachricht" name="Nachricht" rows="5" required></textarea>
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2026 Sonne + Wärme Rhein‑Neckar | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+    </footer>
+</body>
+</html>
