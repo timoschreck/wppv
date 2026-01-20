@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <title>Sonne + Wärme Rhein‑Neckar – Startseite</title>
     <link rel="icon" type="image/png" sizes="16x16" href="images/logo_favicon_16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo_favicon_32.png">
@@ -10,7 +15,7 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.5; }
         header { background: #f6f6f6; padding: 20px; }
-        header img { height: 60px; vertical-align: middle; }
+        header img { height: 80px; vertical-align: middle; }
         nav { margin-top: 10px; }
         nav a { margin-right: 15px; color: #333; text-decoration: none; font-weight: bold; }
         .hero { background: #ffe; padding: 40px 20px; text-align: center; }
@@ -48,7 +53,7 @@
     </div>
     <div class="form-section">
         <h2>Kostenlose Energie‑Erstberatung anfordern</h2>
-        <form action="https://formsubmit.co/info@sw-rn.de" method="POST">
+        <form action="https://formsubmit.co/info@sw-rn.de" method="POST" autocomplete="off">
             <!-- FormSubmit will redirect to danke.html -->
             <input type="hidden" name="_next" value="https://www.sw-rn.de/danke.html">
             <label for="vorname">Vorname</label>
@@ -63,7 +68,7 @@
             <input type="text" id="plz" name="PLZ" required>
             <button type="submit">Kostenlose Beratung anfordern</button>
         </form>
-        <p>Oder Sie können uns direkt anrufen: <a href="tel:+4915565415254">+49 15565 415254</a></p>
+        <p>Oder Sie können uns direkt anrufen: <a href="tel:+4915565415254" target="_blank" rel="noopener noreferrer">+49 15565 415254</a></p>
     </div>
     <footer>
         <p>&copy; 2026 Sonne + Wärme Rhein‑Neckar | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
