@@ -13,19 +13,88 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo_favicon_32.png">
     <link rel="icon" type="image/png" sizes="64x64" href="images/logo_favicon_64.png">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.5; }
-        header { background: #f6f6f6; padding: 20px; }
-        header img { height: 80px; vertical-align: middle; }
-        nav { margin-top: 10px; }
-        nav a { margin-right: 15px; color: #333; text-decoration: none; font-weight: bold; }
-        .hero { background: #ffe; padding: 40px 20px; text-align: center; }
-        .hero h1 { margin: 0 0 10px; }
-        .section { padding: 40px 20px; }
-        .form-section { background: #f0f8ff; padding: 40px 20px; }
-        form label { display: block; margin: 10px 0 5px; }
-        form input { width: 100%; padding: 10px; margin-bottom: 15px; }
-        form button { background: #0066cc; color: #fff; border: none; padding: 10px 20px; cursor: pointer; }
-        footer { background: #f6f6f6; padding: 20px; text-align: center; font-size: 0.9em; }
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        header {
+            background: #f6f6f6;
+            padding: 20px;
+        }
+        /*
+         * Prevent the header logo from being distorted by only specifying a
+         * maximum height. By setting the height and width to auto the
+         * intrinsic aspect ratio of the image is preserved. A max-height
+         * ensures the logo never grows too large on larger screens.
+         */
+        header img {
+            height: auto;
+            max-height: 80px;
+            width: auto;
+            vertical-align: middle;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin-right: 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*
+         * Hero section.
+         * A light yellow background helps the dark text stand out, while a
+         * semi-transparent watermark of a modern house with solar panels and
+         * a heat pump subtly reinforces the theme without distracting from
+         * the headline. The image is blended using a lighten blend mode so
+         * that it remains unobtrusive behind the text.
+         */
+        .hero {
+            background-color: #ffe;
+            background-image: url('images/house_watermark.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: lighten;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            margin: 0 0 10px;
+        }
+        .section {
+            padding: 40px 20px;
+        }
+        .form-section {
+            background: #f0f8ff;
+            padding: 40px 20px;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        form button {
+            background: #0066cc;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        footer {
+            background: #f6f6f6;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
