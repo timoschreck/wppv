@@ -3,127 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Security headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <!-- SEO description tailored to the start page -->
+    <meta name="description" content="Ihr regionaler Partner für Photovoltaik‑Anlagen und Wärmepumpen im Rhein‑Neckar‑Gebiet. Wir beraten Sie persönlich, planen und installieren Ihre Anlage und unterstützen Sie bei Förderung und Finanzierung.">
     <title>Sonne + Wärme Rhein‑Neckar – Startseite</title>
     <link rel="icon" type="image/png" sizes="16x16" href="images/logo_favicon_16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo_favicon_32.png">
     <link rel="icon" type="image/png" sizes="64x64" href="images/logo_favicon_64.png">
-    <style>
-        /* Global styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-        }
-        header {
-            background: #f6f6f6;
-            padding: 20px;
-        }
-        /*
-         * Prevent the header logo from being distorted by only specifying a
-         * maximum height. By setting the height and width to auto the
-         * intrinsic aspect ratio of the image is preserved. A max-height
-         * ensures the logo never grows too large on larger screens.
-         */
-        header img {
-            height: auto;
-            max-height: 80px;
-            width: auto;
-            vertical-align: middle;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            margin-right: 15px;
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        /*
-         * Hero section.
-         * A light yellow background helps the dark text stand out, while a
-         * semi-transparent watermark of a modern house with solar panels and
-         * a heat pump subtly reinforces the theme without distracting from
-         * the headline. The image is blended using a lighten blend mode so
-         * that it remains unobtrusive behind the text.
-         */
-        .hero {
-            background-color: #ffe;
-            background-image: url('images/house_watermark.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-blend-mode: lighten;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .hero h1 {
-            margin: 0 0 10px;
-        }
-        .section {
-            padding: 40px 20px;
-        }
-        .form-section {
-            background: #f0f8ff;
-            padding: 40px 20px;
-        }
-        form label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        form input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-        }
-        form button {
-            background: #0066cc;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        footer {
-            background: #f6f6f6;
-            padding: 20px;
-            text-align: center;
-            font-size: 0.9em;
-        }
-    </style>
+    <!-- Global stylesheet and navigation script -->
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="assets/site.js" defer></script>
 </head>
 <body>
+    <!-- Fixed navigation header -->
     <header>
-        <img src="images/logo_header_transparent.png" alt="Sonne + Wärme Rhein-Neckar Logo">
+        <img src="images/logo_header_transparent.png" alt="Sonne + Wärme Rhein‑Neckar Logo" loading="lazy" decoding="async">
+        <!-- Burger icon toggles the mobile menu -->
+        <div class="burger" aria-label="Navigation umschalten">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav>
-            <a href="index.html">Startseite</a>
-            <a href="photovoltaik-mannheim.html">Photovoltaik</a>
-            <a href="waermepumpe-mannheim.html">Wärmepumpe</a>
-            <a href="kombiloesung.html">Kombi‑Lösung</a>
-            <a href="foerderung.html">Förderung</a>
-            <a href="partner.html">Partner</a>
-            <a href="kontakt.html">Kontakt</a>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="photovoltaik-mannheim.html">Photovoltaik</a></li>
+                <li><a href="waermepumpe-mannheim.html">Wärmepumpe</a></li>
+                <li><a href="kombiloesung.html">Kombi‑Lösung</a></li>
+                <li><a href="foerderung.html">Förderung</a></li>
+                <li><a href="partner.html">Partner</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a class="cta-btn" href="kontakt.html">Jetzt beraten lassen</a></li>
+            </ul>
         </nav>
     </header>
-    <div class="hero">
-        <h1>Sonne + Wärme Rhein‑Neckar</h1>
-        <p>Ihr regionaler Partner für Photovoltaik‑Anlagen und Wärmepumpen im Rhein‑Neckar‑Gebiet.</p>
-        <p>Wir beraten Sie persönlich, transparent und unverbindlich.</p>
+
+    <!-- Hero section summarising the brand promise with text on the left and an image on the right -->
+    <div class="section hero">
+        <div class="hero-text">
+            <h1>Sonne + Wärme Rhein‑Neckar</h1>
+            <p>Ihr regionaler Partner für Photovoltaik‑Anlagen und Wärmepumpen im Rhein‑Neckar‑Gebiet.</p>
+            <p>Wir beraten Sie persönlich, transparent und unverbindlich.</p>
+        </div>
+        <div class="hero-img">
+            <img src="images/solar_house_bg.jpg" alt="Haus mit Photovoltaik und Wärmepumpe">
+        </div>
     </div>
+
+    <!-- Leistungsbeschreibung -->
     <div class="section">
         <h2>Unsere Leistungen</h2>
         <p>Als regionales Unternehmen unterstützen wir Hausbesitzer dabei, ihre Energieversorgung nachhaltig zu gestalten. Mit Photovoltaik‑Anlagen und effizienten Wärmepumpen reduzieren Sie Ihre Energiekosten und machen sich unabhängiger vom Energiemarkt.</p>
         <p>Wir bieten Ihnen persönliche Beratung, individuelle Planung, hochwertige Installation sowie Unterstützung bei Finanzierung und Förderung.</p>
     </div>
-    <div class="form-section">
+
+    <!-- Beratungsformular -->
+    <div id="beratung" class="form-section">
         <h2>Kostenlose Energie‑Erstberatung anfordern</h2>
         <form action="https://formsubmit.co/info@sw-rn.de" method="POST" autocomplete="off">
-            <!-- FormSubmit will redirect to danke.html -->
+            <!-- Weiterleitung nach erfolgreicher Übermittlung -->
             <input type="hidden" name="_next" value="https://www.sw-rn.de/danke.html">
             <label for="vorname">Vorname</label>
             <input type="text" id="vorname" name="Vorname" required>
@@ -137,8 +74,9 @@
             <input type="text" id="plz" name="PLZ" required>
             <button type="submit">Kostenlose Beratung anfordern</button>
         </form>
-        <p>Oder Sie können uns direkt anrufen: <a href="tel:+4915565415254" target="_blank" rel="noopener noreferrer">+49 15565 415254</a></p>
+        <p>Oder Sie können uns direkt anrufen: <a href="tel:+4915565415254" target="_blank" rel="noopener noreferrer">+49&nbsp;15565&nbsp;415254</a></p>
     </div>
+
     <footer>
         <p>&copy; 2026 Sonne + Wärme Rhein‑Neckar | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
     </footer>
