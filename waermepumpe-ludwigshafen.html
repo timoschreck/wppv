@@ -8,9 +8,18 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.5; }
         header { background: #f6f6f6; padding: 20px; }
-        header img { height: 60px; vertical-align: middle; }
+        header img { height: auto; max-height: 60px; width: auto; vertical-align: middle; }
         nav a { margin-right: 15px; color: #333; text-decoration: none; font-weight: bold; }
-        .hero { background: #efe; padding: 40px 20px; text-align: center; }
+        .hero {
+            background-color: #efe;
+            background-image: url('images/house_watermark.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: lighten;
+            padding: 40px 20px;
+            text-align: center;
+        }
         .content { padding: 40px 20px; }
         footer { background: #f6f6f6; padding: 20px; text-align: center; font-size: 0.9em; }
         .cta { background: #f0f8ff; padding: 30px; margin-top: 30px; }
@@ -43,7 +52,7 @@
     </div>
     <div class="cta">
         <h3>Jetzt unverbindlich beraten lassen</h3>
-        <form action="https://formsubmit.co/info@sw-rn.de" method="POST">
+        <form action="https://formsubmit.co/info@sw-rn.de" method="POST" autocomplete="off">
             <input type="hidden" name="_next" value="https://www.sw-rn.de/danke.html">
             <label for="name">Name</label>
             <input type="text" id="name" name="Name" required>
@@ -53,7 +62,7 @@
             <input type="text" id="plz" name="PLZ" required>
             <button type="submit">Beratung anfordern</button>
         </form>
-        <p>Telefonisch erreichen Sie uns unter: <a href="tel:+4915565415254">+49 15565 415254</a></p>
+        <p>Telefonisch erreichen Sie uns unter: <a href="tel:+4915565415254" target="_blank" rel="noopener noreferrer">+49 15565 415254</a></p>
     </div>
     <footer>
         <p>&copy; 2026 Sonne + Wärme Rhein‑Neckar | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
